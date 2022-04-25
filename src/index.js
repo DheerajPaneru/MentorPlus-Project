@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import App from './App.js';
 import reportWebVitals from './reportWebVitals';
-
+import Body from './body.js';
+const hoursMinSecs = {hours:1, minutes: 20, seconds: 40}
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
+    <Body  hoursMinSecs={hoursMinSecs}/>
   </React.StrictMode>
 );
 
